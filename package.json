@@ -8,8 +8,13 @@
     "start": "next start"
   },
   "dependencies": {
+    "axios": "^0.20.0",
+    "chrome-aws-lambda": "^5.3.1",
+    "ioredis": "^4.17.3",
     "next": "9.5.5",
+    "puppeteer-core": "^5.3.1",
     "react": "16.14.0",
-    "react-dom": "16.14.0"
+    "react-dom": "16.14.0",
+    "swr": "^0.3.5"
   }
 }
