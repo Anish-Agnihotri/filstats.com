@@ -56,7 +56,7 @@ export default function Home() {
                     ? // Calculate % increase
                       `${(data.price_to_amazon - 100).toFixed(2)}% Costlier`
                     : // Else, calculate how much cheaper
-                      `${100 - data.price_to_amazon}% Cheaper`
+                      `${(100 - data.price_to_amazon).toFixed(2)}% Cheaper`
                 }`}
           </h1>
           <p>Filecoin vs Amazon S3 Standard ($0.276/GB/year)</p>
