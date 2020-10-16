@@ -1,7 +1,6 @@
 ![FilStats logo](https://i.imgur.com/MRheYxC.png)
 
-FilStats is a quick hack to visualize the Filecoin Storage Deal market. It retrieves data from the [Filscan RPC endpoint](https://filscan.io/#/), runs a few calculations to display on the front-end, and tossess the data into a Redis cache with a 1hr ttl.
-Explore Filecoin's storage market and analyze the cost of storing your files.
+FilStats is a quick hack to visualize the Filecoin Storage Deal market. It retrieves data from the [Filscan RPC endpoint](https://filscan.io/#/), runs a few calculations to display on the front-end, and tosses the data into a Redis cache with a 1hr ttl.
 
 ## Run locally
 FilStats is built with [NextJS](https://nextjs.org/) (and their Serverless functions on Vercel).
