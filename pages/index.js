@@ -3,7 +3,7 @@ import Layout from "../components/layout"; // Layout wrapper
 
 export default function Home() {
   // Collect statistics
-  const { data, error } = useSWR("/api/collect");
+  const { data } = useSWR("/api/collect");
 
   return (
     // Layout wrapper for sizing
@@ -18,7 +18,7 @@ export default function Home() {
       {/* Cost per GB stored */}
       <div className="item card">
         <div>
-          <span>Cost per GB</span>
+          <span>Cost per GB (varies by hour)</span>
         </div>
         <div>
           <h1>
@@ -37,7 +37,7 @@ export default function Home() {
           <h1>
             {!data ? "Loading..." : `${data.gb_per_fil.toLocaleString()} GB`}
           </h1>
-          <p>How many GB can you store per FIL?</p>
+          <p>How many GB/year can you store per FIL?</p>
         </div>
       </div>
 

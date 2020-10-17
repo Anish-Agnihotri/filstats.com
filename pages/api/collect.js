@@ -76,7 +76,7 @@ export default async (req, res) => {
     // Create data object with metrics
     let data = {
       update: new Date(),
-      gb_per_fil: totalStored / totalPaid,
+      gb_per_fil: totalStored / year_multiplier / totalPaid,
       cost_per_gb: (1 / (totalStored / totalPaid)) * filPrice * year_multiplier,
       price_to_amazon: (
         (((1 / (totalStored / totalPaid)) * filPrice * year_multiplier) /
